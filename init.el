@@ -4,15 +4,11 @@
 ; Turn off the toolbar
 (tool-bar-mode -1)
 
-(defun maximize-frame ()
-  "Maximize the current frame"
-  (interactive)
-  (w32-send-sys-command 61488))
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (defun post-load-stuff ()
   (interactive)
   (menu-bar-mode -1)
-  (maximize-frame)
   (set-foreground-color "burlywood3")
   (set-background-color "#161616")
   (set-cursor-color "#40FF40")

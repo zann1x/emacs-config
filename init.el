@@ -28,11 +28,6 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
-;; Colors
-(set-foreground-color "burlywood3")
-(set-background-color "#161616")
-(set-cursor-color "#40FF40")
-
 ;; Line numbers
 (column-number-mode t)
 (global-display-line-numbers-mode t)

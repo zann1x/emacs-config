@@ -15,6 +15,7 @@
 
 (package-initialize)
 
+(require 'doom-themes)
 (require 'magit)
 
 ;;-----------------------------------------------------------------;;
@@ -28,21 +29,41 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
-;; Line numbers
-(column-number-mode t)
-(global-display-line-numbers-mode t)
-
 ;; Setup default and initial frame
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
-(add-to-list 'default-frame-alist '(foreground-color . "burlywood3"))
-(add-to-list 'default-frame-alist '(background-color .  "#161616"))
-(add-to-list 'default-frame-alist '(cursor-color . "#40FF40"))
+
+;; Setup theme
+(load-theme 'doom-monokai-pro t)
+;; Enable flashing mode-line on errors
+(doom-themes-visual-bell-config)
 
 ;; Start the initial frame split into two windows
 (split-window-horizontally)
 
-;; New buffers are in text mode
-(setq-default major-mode 'text-mode)
+;; DO. NOT. BEEP.
+(setq ring-bell-function 'ignore)
+
+;; With the initial buffer in text-mode we should get a quicker startup time
+(setq initial-major-mode 'text-mode)
+
+;; Show the column position in the mode line
+(column-number-mode t)
+;; Show line numbers at the side
+(global-display-line-numbers-mode t)
+;; Highlight the current line
+(global-hl-line-mode t)
+;; Cursor should not blink
+(blink-cursor-mode 0)
+
+;; Do not create backup files
+(setq make-backup-files nil)
+
+;; Spaces > Tabs!
+(setq-default indent-tabs-mode nil
+              tab-width 4)
+
+;; Break lines beyond the buffer's fill column
+(setq-default fill-column 80)
 
 ;;-----------------------------------------------------------------;;
 ;;-----------------------------------------------------------------;;
@@ -53,7 +74,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (magit))))
+ '(package-selected-packages (quote (doom-themes magit))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

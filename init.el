@@ -15,8 +15,11 @@
 
 (package-initialize)
 
+(require 'counsel)
 (require 'doom-themes)
+(require 'ivy)
 (require 'magit)
+(require 'which-key)
 
 ;;-----------------------------------------------------------------;;
 ;; GLOBAL CONFIG
@@ -66,6 +69,34 @@
 (setq-default fill-column 80)
 
 ;;-----------------------------------------------------------------;;
+
+;; Enable ivy as a generic completion mechanism
+(ivy-mode 1)
+;; Recent files and bookmarks are shown in the virtual buffer list
+(setq ivy-use-virtual-buffers t)
+;; The format of found items in the buffer list
+(setq ivy-count-format "(%d/%d) ")
+;; Do not show ./ and ../ for file name completion
+(setq ivy-extra-directories nil)
+
+;; Enable counsel for better Emacs command integration into ivy
+(counsel-mode 1)
+
+;; Enable swiper for an isearch with overview in the minibuffer
+(setq search-default-mode #'char-fold-to-regexp)
+
+;; Set keys for use with ivy
+;(global-set-key "\C-s" 'swiper)
+(global-set-key (kbd "C-s") 'swiper-isearch)
+(global-set-key (kbd "C-c g") 'counsel-git)
+;;-----------------------------------------------------------------;;
+
+;; Enable which key for popup help in commands
+(which-key-mode)
+;; Put the key suggestions into the minibuffer
+(which-key-setup-minibuffer)
+
+;;-----------------------------------------------------------------;;
 ;;-----------------------------------------------------------------;;
 ;;-----------------------------------------------------------------;;
 
@@ -74,7 +105,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (doom-themes magit))))
+ '(package-selected-packages (quote (which-key ivy doom-themes magit))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -2,8 +2,10 @@
 
 Install all necessary packages first:
 
-* counsel
+* company
+* counsel (contain in ivy?)
 * doom-themes
 * ivy
 * magit
+* projectile
 * which-key

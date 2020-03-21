@@ -47,6 +47,10 @@
 ;; 4 Spaces default indentation
 (setq-default tab-width 4)
 
+;; C code indentation
+(setq c-default-style "bsd"
+      c-basic-offset 4)
+
 ;; Break lines beyond the buffer's fill column
 (setq-default fill-column 80)
 

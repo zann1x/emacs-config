@@ -11,10 +11,14 @@
 
 (package-initialize)
 
+;; Add path to custom setup files
 (add-to-list 'load-path "~/.emacs.d/custom")
 
+;; Include all of the custom setup files
+(require 'setup-company)
 (require 'setup-general)
 (require 'setup-ivy-counsel)
+;(require 'setup-projectile)
 (require 'setup-which-key)
 
 ;;-----------------------------------------------------------------;;
@@ -26,7 +30,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (which-key ivy doom-themes magit))))
+ '(package-selected-packages
+   (quote
+    (projectile company which-key ivy doom-themes magit))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

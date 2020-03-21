@@ -13,6 +13,9 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
+;; Too much typing if bad for your fingers they say
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 ;; Setup default and initial frame
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
 
@@ -46,10 +49,6 @@
 (setq-default indent-tabs-mode nil)
 ;; 4 Spaces default indentation
 (setq-default tab-width 4)
-
-;; C code indentation
-(setq c-default-style "bsd"
-      c-basic-offset 4)
 
 ;; Break lines beyond the buffer's fill column
 (setq-default fill-column 80)

@@ -21,6 +21,10 @@
 ;(require 'setup-projectile)
 (require 'setup-which-key)
 
+;; Include layers for special languag setups
+(require 'layers/setup-c)
+(require 'layers/setup-javascript)
+
 ;;-----------------------------------------------------------------;;
 ;;-----------------------------------------------------------------;;
 ;;-----------------------------------------------------------------;;
@@ -32,7 +36,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (projectile company which-key ivy doom-themes magit))))
+    (company-tern js2-mode projectile company which-key ivy doom-themes magit))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

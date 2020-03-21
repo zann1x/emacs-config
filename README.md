@@ -1,9 +1,18 @@
 # Emacs Config
 
-Install all necessary packages first:
+(
+Install some dependencies:
+
+```bash
+$ npm install -g tern
+```
+)
+
+Install all necessary emacs packages:
 
 * company
-* counsel (contain in ivy?)
+(* company-tern)
+* counsel (contained in ivy?)
 * doom-themes
 * ivy
 * magit

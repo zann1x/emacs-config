@@ -1,12 +1,11 @@
-(require 'doom-themes)
 (require 'magit)
 
 ;;-----------------------------------------------------------------;;
 ;; VARIOUS GLOBAL SETTINGS
 ;;-----------------------------------------------------------------;;
 
-;; Do not show the startup splash screen
-;(setq inhibit-startup-screen t)
+;; Do not show the splash screen at startup
+(setq inhibit-startup-screen t)
 
 ;; Get rid of all those bars
 (tool-bar-mode -1)
@@ -18,11 +17,6 @@
 
 ;; Setup default and initial frame
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
-
-;; Setup theme
-(load-theme 'doom-monokai-pro t)
-;; Enable flashing mode-line on errors
-(doom-themes-visual-bell-config)
 
 ;; Start the initial frame split into two windows
 (split-window-horizontally)

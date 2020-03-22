@@ -19,6 +19,7 @@
 (require 'setup-general)
 (require 'setup-ivy-counsel)
 ;(require 'setup-projectile)
+(require 'setup-theme)
 (require 'setup-which-key)
 
 ;; Include layers for special languag setups

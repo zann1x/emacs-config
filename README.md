@@ -11,7 +11,7 @@ $ npm install -g tern
 Install all necessary emacs packages:
 
 * company
-(* company-tern)
+* (company-tern)
 * counsel (contained in ivy?)
 * doom-themes
 * ivy

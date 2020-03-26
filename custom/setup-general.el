@@ -8,9 +8,9 @@
 (setq inhibit-startup-screen t)
 
 ;; Get rid of all those bars
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(scroll-bar-mode -1)
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+(scroll-bar-mode 0)
 
 ;; Too much typing if bad for your fingers they say
 (defalias 'yes-or-no-p 'y-or-n-p)

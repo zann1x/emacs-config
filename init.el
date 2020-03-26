@@ -24,7 +24,7 @@
 
 ;; Include layers for special languag setups
 (require 'layers/setup-c)
-(require 'layers/setup-javascript)
+;(require 'layers/setup-javascript)
 
 ;;-----------------------------------------------------------------;;
 ;;-----------------------------------------------------------------;;

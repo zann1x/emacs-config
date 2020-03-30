@@ -44,6 +44,9 @@
 ;; 4 Spaces default indentation
 (setq-default tab-width 4)
 
+;; Smooth scrolling
+(setq scroll-step 1)
+
 ;; Truncate lines
 (set-default 'truncate-lines t)
 ;; Break lines beyond the buffer's fill column

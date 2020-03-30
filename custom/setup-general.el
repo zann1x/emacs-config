@@ -44,6 +44,8 @@
 ;; 4 Spaces default indentation
 (setq-default tab-width 4)
 
+;; Truncate lines
+(set-default 'truncate-lines t)
 ;; Break lines beyond the buffer's fill column
 (setq-default fill-column 80)
 

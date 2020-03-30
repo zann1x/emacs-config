@@ -54,6 +54,9 @@
 
 ;; Activate whitespace-mode to view all whitespace characters
 (global-set-key (kbd "C-c w") 'whitespace-mode)
+;; Toggle displaying the current time
+(global-set-key (kbd "C-c t") 'display-time-mode)
+
 
 ;; Activate windmove for easily switching between windows with Shift+Arrow key
 (windmove-default-keybindings)

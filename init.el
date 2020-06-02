@@ -7,7 +7,7 @@
 ;; Load emacs 24's package system and add the MELPA repository
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/") t)
+             '("melpa" . "https://melpa.org/packages/") t)
 
 (package-initialize)
 

@@ -47,7 +47,11 @@
 (setq-default tab-width 4)
 
 ;; Smooth scrolling
-(setq scroll-step 1)
+(setq scroll-step 1
+      scroll-conservatively 10000
+      mouse-wheel-scroll-amount '(1 ((shift) - 1))
+      mouse-wheel-progressive-speed nil
+      mouse-wheel-follow-mouse 't)
 
 ;; Truncate lines
 (set-default 'truncate-lines t)

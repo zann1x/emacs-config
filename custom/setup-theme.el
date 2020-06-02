@@ -5,7 +5,7 @@
 ;;-----------------------------------------------------------------;;
 
 ;; Setup theme
-(load-theme 'doom-dark+ t)
+(load-theme 'doom-sourcerer t)
 
 ;; Enable flashing mode-line on errors
 (doom-themes-visual-bell-config)

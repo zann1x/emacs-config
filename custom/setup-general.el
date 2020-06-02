@@ -4,8 +4,10 @@
 ;; VARIOUS GLOBAL SETTINGS
 ;;-----------------------------------------------------------------;;
 
-;; Do not show the splash screen at startup
+;; Do not show the splash screen and message  at startup
 (setq inhibit-startup-screen t)
+(setq inhibit-startup-message t)
+(setq initial-scratch-message nil)
 
 ;; Get rid of all those bars
 (tool-bar-mode 0)
@@ -56,7 +58,6 @@
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 ;; Toggle displaying the current time
 (global-set-key (kbd "C-c t") 'display-time-mode)
-
 
 ;; Activate windmove for easily switching between windows with Shift+Arrow key
 (windmove-default-keybindings)

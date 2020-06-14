@@ -22,7 +22,7 @@
 (require 'setup-theme)
 (require 'setup-which-key)
 
-;; Include layers for special languag setups
+;; Include layers for special language setups
 (require 'layers/setup-c)
 
 ;;-----------------------------------------------------------------;;

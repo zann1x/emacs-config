@@ -1,20 +1,15 @@
 # Emacs Config
 
-(
-Install some dependencies:
+1. Clone the project into the folder .emacs.d in your home directory.
 
-```bash
-$ npm install -g tern
-```
-)
+1. On Windows, the system variable HOME needs to be set to the location in which the .emacs.d folder is located.
 
-Install all necessary emacs packages:
+1. Install all necessary emacs packages:
 
-* company
-* (company-tern)
-* counsel (contained in ivy?)
-* doom-themes
-* ivy
-* magit
-* projectile
-* which-key
+    * company
+    * counsel-projectile
+    * doom-themes
+    * ivy
+    * magit
+    * projectile
+    * which-key

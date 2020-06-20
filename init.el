@@ -15,8 +15,9 @@
 (add-to-list 'load-path "~/.emacs.d/custom")
 
 ;; Include all of the custom setup files
-(require 'setup-company)
 (require 'setup-general)
+
+;(require 'setup-company)
 (require 'setup-ivy-counsel)
 (require 'setup-projectile)
 (require 'setup-theme)
@@ -36,7 +37,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (counsel-projectile projectile company which-key ivy doom-themes magit))))
+    (counsel-projectile projectile which-key ivy doom-themes magit))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
